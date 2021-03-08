@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #212b3a;
+  color: white;
+  font-weight: 400;
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 30px;
+  /* overflow: hidden; */
+  white-space: pre-line;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: var(--gridColumns);
+  height: 100vh;
+}
+
+.grid-row-1 {
+  display: grid;
+  grid-template-columns: var(--gridColumns);
+  grid-template-rows: 2fr;
+  height: 100vh;
+}
+
+.col {
+  background: linear-gradient(90deg, #23a6d5, #4b6cb7, #182848);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  animation: gradient 10s ease infinite;
+}
+.colReversed {
+  /* background: linear-gradient(45deg, #763ab2, #cc71d6); */
+
+  /* background: linear-gradient(90deg, #fcff9e, #23a6d5, #c67700); */
+  background: linear-gradient(-90deg, #23a6d5, #4b6cb7, #182848);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
